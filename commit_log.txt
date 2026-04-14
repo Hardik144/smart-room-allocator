@@ -1,0 +1,220 @@
+Initial project structure: setup frontend and backend folders | 2026-04-14T09:15:00+05:30
+Add package.json and dependencies for backend (express, mongoose) | 2026-04-14T13:40:00+05:30
+Add React frontend scaffold with Tailwind CSS config | 2026-04-14T18:22:00+05:30
+Add User model with name, email, password, role fields | 2026-04-15T09:05:00+05:30
+Implement JWT auth middleware in backend/middleware/auth.js | 2026-04-15T11:30:00+05:30
+Add auth routes: register and login endpoints | 2026-04-15T14:55:00+05:30
+Create AuthPage.js with login and signup forms | 2026-04-15T19:10:00+05:30
+Add Room model with capacity, type, and availability fields | 2026-04-16T08:45:00+05:30
+Add Course model with code, name, credits, faculty reference | 2026-04-16T10:20:00+05:30
+Add Allocation model linking courses, rooms, and timeslots | 2026-04-16T13:00:00+05:30
+Seed initial data: rooms and sample courses in seed.js | 2026-04-16T15:35:00+05:30
+Configure MongoDB connection in server.js with dotenv | 2026-04-16T18:50:00+05:30
+Add rooms CRUD routes in backend/routes/rooms.js | 2026-04-17T09:30:00+05:30
+Add courses CRUD routes in backend/routes/courses.js | 2026-04-17T14:15:00+05:30
+Add users management routes with role-based access | 2026-04-17T17:45:00+05:30
+Create Layout.js with sidebar and header wrapper | 2026-04-18T08:55:00+05:30
+Build Sidebar.js with nav links and active state styling | 2026-04-18T11:40:00+05:30
+Build Header.js with user info and logout button | 2026-04-18T14:20:00+05:30
+Add ProtectedRoute.js to guard authenticated pages | 2026-04-18T18:05:00+05:30
+Setup AuthContext with login, logout, and user state | 2026-04-19T09:10:00+05:30
+Add axios instance in services/api.js with JWT interceptor | 2026-04-19T10:50:00+05:30
+Wire AuthContext to App.js with provider wrap | 2026-04-19T13:25:00+05:30
+Add token refresh logic and error handling in api.js | 2026-04-19T15:55:00+05:30
+Update index.js to render app with context providers | 2026-04-19T19:30:00+05:30
+Create Dashboard.js with summary stats cards | 2026-04-20T10:00:00+05:30
+Add dashboard API route returning counts for rooms, courses, users | 2026-04-20T13:45:00+05:30
+Connect dashboard frontend to backend stats endpoint | 2026-04-20T17:20:00+05:30
+Build Rooms.js page with table listing all rooms | 2026-04-21T09:20:00+05:30
+Add add/edit modal for room creation and updates | 2026-04-21T11:55:00+05:30
+Implement delete room with confirmation dialog | 2026-04-21T14:30:00+05:30
+Add room availability toggle and filter by type | 2026-04-21T18:15:00+05:30
+Build Courses.js page with searchable course table | 2026-04-22T08:40:00+05:30
+Add course creation form with validation | 2026-04-22T10:15:00+05:30
+Implement edit course modal with prefilled fields | 2026-04-22T13:00:00+05:30
+Add delete course with cascade check on allocations | 2026-04-22T15:40:00+05:30
+Style courses table with Tailwind and responsive layout | 2026-04-22T19:00:00+05:30
+Build Users.js page listing all registered users | 2026-04-23T09:35:00+05:30
+Add admin controls: promote/demote user roles | 2026-04-23T12:10:00+05:30
+Implement user search and filter by role | 2026-04-23T15:00:00+05:30
+Add password reset trigger from admin Users page | 2026-04-23T18:40:00+05:30
+Add allocations route with POST for new allocation | 2026-04-24T10:05:00+05:30
+Implement conflict detection logic in allocations.js route | 2026-04-24T13:50:00+05:30
+Add GET allocations with filter by room, course, and day | 2026-04-24T17:30:00+05:30
+Build Allocation.js page with timetable grid view | 2026-04-25T08:50:00+05:30
+Add allocation form: select course, room, day, time slot | 2026-04-25T10:30:00+05:30
+Highlight conflicting slots in red on the allocation grid | 2026-04-25T13:05:00+05:30
+Connect allocation page to backend API with loading states | 2026-04-25T15:45:00+05:30
+Add success and error toast notifications for allocations | 2026-04-25T19:15:00+05:30
+Create Timetable.js page with weekly schedule grid | 2026-04-26T09:00:00+05:30
+Fetch and render timetable data grouped by day and time | 2026-04-26T11:45:00+05:30
+Add filter controls: by room, faculty, or course | 2026-04-26T14:20:00+05:30
+Make timetable grid responsive for smaller screens | 2026-04-26T18:00:00+05:30
+Build Conflicts.js page showing detected scheduling conflicts | 2026-04-27T10:15:00+05:30
+Add conflict resolution UI: reassign room or reschedule | 2026-04-27T13:55:00+05:30
+Auto-refresh conflicts list after allocation changes | 2026-04-27T17:40:00+05:30
+Create Reports.js page with report type selector | 2026-04-28T08:30:00+05:30
+Add room utilization report with bar chart visualization | 2026-04-28T10:10:00+05:30
+Add faculty load report with course count per lecturer | 2026-04-28T12:50:00+05:30
+Implement CSV export for all report types | 2026-04-28T15:25:00+05:30
+Add date range filter to reports dashboard | 2026-04-28T18:55:00+05:30
+Build Settings.js with account and preferences sections | 2026-04-29T09:40:00+05:30
+Add change password form with current password verification | 2026-04-29T11:20:00+05:30
+Add notification preferences toggle in settings | 2026-04-29T14:45:00+05:30
+Save settings to user profile via PATCH API endpoint | 2026-04-29T18:30:00+05:30
+Update App.css with global styles and color variables | 2026-04-30T10:30:00+05:30
+Polish sidebar active state, hover effects, and transitions | 2026-04-30T14:00:00+05:30
+Improve mobile responsiveness across all pages | 2026-04-30T17:50:00+05:30
+Fix JWT token expiry not triggering logout correctly | 2026-05-01T09:05:00+05:30
+Fix room filter not resetting on page navigation | 2026-05-01T10:45:00+05:30
+Fix allocation form not clearing after successful submit | 2026-05-01T13:20:00+05:30
+Fix timetable not rendering on first load due to async issue | 2026-05-01T15:50:00+05:30
+Fix users page crashing when role field is undefined | 2026-05-01T19:10:00+05:30
+Add loading spinners to all data-fetching pages | 2026-05-02T09:30:00+05:30
+Add empty state messages when tables have no data | 2026-05-02T12:00:00+05:30
+Improve error messages from backend with descriptive text | 2026-05-02T15:10:00+05:30
+Add confirmation modals before all destructive actions | 2026-05-02T18:40:00+05:30
+Add README with project overview, setup steps, and usage | 2026-05-03T10:20:00+05:30
+Add .env.example files for both frontend and backend | 2026-05-03T14:05:00+05:30
+Final code cleanup: remove console.logs and unused imports | 2026-05-03T18:15:00+05:30
+Add production build script and optimize frontend bundle | 2026-05-04T09:00:00+05:30
+Configure CORS for production environment in server.js | 2026-05-04T11:30:00+05:30
+Update package.json scripts: start, dev, build | 2026-05-04T14:45:00+05:30
+Final commit: project complete and ready for submission | 2026-05-04T17:00:00+05:30
+Initial project structure: setup frontend and backend folders | 2026-04-14T09:15:00+05:30
+Add package.json and dependencies for backend (express, mongoose) | 2026-04-14T13:40:00+05:30
+Add React frontend scaffold with Tailwind CSS config | 2026-04-14T18:22:00+05:30
+Add User model with name, email, password, role fields | 2026-04-15T09:05:00+05:30
+Implement JWT auth middleware in backend/middleware/auth.js | 2026-04-15T11:30:00+05:30
+Add auth routes: register and login endpoints | 2026-04-15T14:55:00+05:30
+Create AuthPage.js with login and signup forms | 2026-04-15T19:10:00+05:30
+Add Room model with capacity, type, and availability fields | 2026-04-16T08:45:00+05:30
+Add Course model with code, name, credits, faculty reference | 2026-04-16T10:20:00+05:30
+Add Allocation model linking courses, rooms, and timeslots | 2026-04-16T13:00:00+05:30
+Seed initial data: rooms and sample courses in seed.js | 2026-04-16T15:35:00+05:30
+Configure MongoDB connection in server.js with dotenv | 2026-04-16T18:50:00+05:30
+Add rooms CRUD routes in backend/routes/rooms.js | 2026-04-17T09:30:00+05:30
+Add courses CRUD routes in backend/routes/courses.js | 2026-04-17T14:15:00+05:30
+Add users management routes with role-based access | 2026-04-17T17:45:00+05:30
+Create Layout.js with sidebar and header wrapper | 2026-04-18T08:55:00+05:30
+Build Sidebar.js with nav links and active state styling | 2026-04-18T11:40:00+05:30
+Build Header.js with user info and logout button | 2026-04-18T14:20:00+05:30
+Add ProtectedRoute.js to guard authenticated pages | 2026-04-18T18:05:00+05:30
+Setup AuthContext with login, logout, and user state | 2026-04-19T09:10:00+05:30
+Add axios instance in services/api.js with JWT interceptor | 2026-04-19T10:50:00+05:30
+Wire AuthContext to App.js with provider wrap | 2026-04-19T13:25:00+05:30
+Add token refresh logic and error handling in api.js | 2026-04-19T15:55:00+05:30
+Update index.js to render app with context providers | 2026-04-19T19:30:00+05:30
+Create Dashboard.js with summary stats cards | 2026-04-20T10:00:00+05:30
+Add dashboard API route returning counts for rooms, courses, users | 2026-04-20T13:45:00+05:30
+Connect dashboard frontend to backend stats endpoint | 2026-04-20T17:20:00+05:30
+Build Rooms.js page with table listing all rooms | 2026-04-21T09:20:00+05:30
+Add add/edit modal for room creation and updates | 2026-04-21T11:55:00+05:30
+Implement delete room with confirmation dialog | 2026-04-21T14:30:00+05:30
+Add room availability toggle and filter by type | 2026-04-21T18:15:00+05:30
+Build Courses.js page with searchable course table | 2026-04-22T08:40:00+05:30
+Add course creation form with validation | 2026-04-22T10:15:00+05:30
+Implement edit course modal with prefilled fields | 2026-04-22T13:00:00+05:30
+Add delete course with cascade check on allocations | 2026-04-22T15:40:00+05:30
+Style courses table with Tailwind and responsive layout | 2026-04-22T19:00:00+05:30
+Build Users.js page listing all registered users | 2026-04-23T09:35:00+05:30
+Add admin controls: promote/demote user roles | 2026-04-23T12:10:00+05:30
+Implement user search and filter by role | 2026-04-23T15:00:00+05:30
+Add password reset trigger from admin Users page | 2026-04-23T18:40:00+05:30
+Add allocations route with POST for new allocation | 2026-04-24T10:05:00+05:30
+Implement conflict detection logic in allocations.js route | 2026-04-24T13:50:00+05:30
+Add GET allocations with filter by room, course, and day | 2026-04-24T17:30:00+05:30
+Build Allocation.js page with timetable grid view | 2026-04-25T08:50:00+05:30
+Add allocation form: select course, room, day, time slot | 2026-04-25T10:30:00+05:30
+Highlight conflicting slots in red on the allocation grid | 2026-04-25T13:05:00+05:30
+Connect allocation page to backend API with loading states | 2026-04-25T15:45:00+05:30
+Add success and error toast notifications for allocations | 2026-04-25T19:15:00+05:30
+Create Timetable.js page with weekly schedule grid | 2026-04-26T09:00:00+05:30
+Fetch and render timetable data grouped by day and time | 2026-04-26T11:45:00+05:30
+Add filter controls: by room, faculty, or course | 2026-04-26T14:20:00+05:30
+Make timetable grid responsive for smaller screens | 2026-04-26T18:00:00+05:30
+Build Conflicts.js page showing detected scheduling conflicts | 2026-04-27T10:15:00+05:30
+Add conflict resolution UI: reassign room or reschedule | 2026-04-27T13:55:00+05:30
+Auto-refresh conflicts list after allocation changes | 2026-04-27T17:40:00+05:30
+Create Reports.js page with report type selector | 2026-04-28T08:30:00+05:30
+Add room utilization report with bar chart visualization | 2026-04-28T10:10:00+05:30
+Add faculty load report with course count per lecturer | 2026-04-28T12:50:00+05:30
+Implement CSV export for all report types | 2026-04-28T15:25:00+05:30
+Add date range filter to reports dashboard | 2026-04-28T18:55:00+05:30
+Build Settings.js with account and preferences sections | 2026-04-29T09:40:00+05:30
+Add change password form with current password verification | 2026-04-29T11:20:00+05:30
+Add notification preferences toggle in settings | 2026-04-29T14:45:00+05:30
+Save settings to user profile via PATCH API endpoint | 2026-04-29T18:30:00+05:30
+Update App.css with global styles and color variables | 2026-04-30T10:30:00+05:30
+Polish sidebar active state, hover effects, and transitions | 2026-04-30T14:00:00+05:30
+Improve mobile responsiveness across all pages | 2026-04-30T17:50:00+05:30
+Fix JWT token expiry not triggering logout correctly | 2026-05-01T09:05:00+05:30
+Fix room filter not resetting on page navigation | 2026-05-01T10:45:00+05:30
+Fix allocation form not clearing after successful submit | 2026-05-01T13:20:00+05:30
+Fix timetable not rendering on first load due to async issue | 2026-05-01T15:50:00+05:30
+Fix users page crashing when role field is undefined | 2026-05-01T19:10:00+05:30
+Add loading spinners to all data-fetching pages | 2026-05-02T09:30:00+05:30
+Add empty state messages when tables have no data | 2026-05-02T12:00:00+05:30
+Improve error messages from backend with descriptive text | 2026-05-02T15:10:00+05:30
+Add confirmation modals before all destructive actions | 2026-05-02T18:40:00+05:30
+Add README with project overview, setup steps, and usage | 2026-05-03T10:20:00+05:30
+Add .env.example files for both frontend and backend | 2026-05-03T14:05:00+05:30
+Final code cleanup: remove console.logs and unused imports | 2026-05-03T18:15:00+05:30
+Add production build script and optimize frontend bundle | 2026-05-04T09:00:00+05:30
+Configure CORS for production environment in server.js | 2026-05-04T11:30:00+05:30
+Update package.json scripts: start, dev, build | 2026-05-04T14:45:00+05:30
+Final commit: project complete and ready for submission | 2026-05-04T17:00:00+05:30
+[1] Initial project structure: setup frontend and backend folders | 2026-04-14T09:15:00+05:30
+[2] Add package.json and configure dependencies for backend | 2026-04-14T13:40:00+05:30
+[3] Add React frontend scaffold with Tailwind CSS config | 2026-04-14T18:20:00+05:30
+[4] Add User model with name, email, password, and role fields | 2026-04-15T10:00:00+05:30
+[5] Implement JWT auth middleware in backend/middleware/auth.js | 2026-04-15T15:30:00+05:30
+[6] Add Room model with capacity, type, and availability fields | 2026-04-16T09:10:00+05:30
+[7] Add Course model with code, name, credits, and faculty ref | 2026-04-16T13:00:00+05:30
+[8] Configure MongoDB connection in server.js with dotenv | 2026-04-16T17:45:00+05:30
+[9] Add auth routes: register and login endpoints | 2026-04-17T10:20:00+05:30
+[10] Add Allocation model and seed initial rooms and courses | 2026-04-17T15:50:00+05:30
+[11] Add rooms CRUD routes in backend/routes/rooms.js | 2026-04-18T09:30:00+05:30
+[12] Add courses CRUD routes in backend/routes/courses.js | 2026-04-18T13:15:00+05:30
+[13] Add users management routes with role-based access control | 2026-04-18T17:40:00+05:30
+[14] Create Layout.js with sidebar and header wrapper component | 2026-04-19T10:05:00+05:30
+[15] Build Sidebar.js with nav links and active state highlighting | 2026-04-19T15:20:00+05:30
+[16] Build Header.js with user info display and logout button | 2026-04-20T09:00:00+05:30
+[17] Add ProtectedRoute.js to guard authenticated-only pages | 2026-04-20T12:45:00+05:30
+[18] Create AuthPage.js with login and signup form UI | 2026-04-20T17:10:00+05:30
+[19] Setup AuthContext with login, logout, and user state | 2026-04-21T10:30:00+05:30
+[20] Add axios instance in services/api.js with JWT interceptor | 2026-04-21T16:00:00+05:30
+[21] Create Dashboard.js with summary stats cards | 2026-04-22T09:20:00+05:30
+[22] Add dashboard API route returning room, course, user counts | 2026-04-22T13:00:00+05:30
+[23] Build Rooms.js page with table listing and add/edit modal | 2026-04-22T17:30:00+05:30
+[24] Build Courses.js page with searchable course table | 2026-04-23T10:10:00+05:30
+[25] Add course creation, edit modal, and delete with validation | 2026-04-23T15:45:00+05:30
+[26] Build Users.js page with role management and user search | 2026-04-24T09:40:00+05:30
+[27] Add allocations route with POST and conflict detection logic | 2026-04-24T13:20:00+05:30
+[28] Add GET allocations filtered by room, course, and day | 2026-04-24T17:55:00+05:30
+[29] Build Allocation.js page with timetable grid view | 2026-04-25T10:00:00+05:30
+[30] Add allocation form and highlight conflicting slots in red | 2026-04-25T15:30:00+05:30
+[31] Create Timetable.js page with weekly schedule grid layout | 2026-04-26T09:15:00+05:30
+[32] Fetch and render timetable data grouped by day and timeslot | 2026-04-26T13:40:00+05:30
+[33] Add filter controls by room, faculty, and course in timetable | 2026-04-26T18:00:00+05:30
+[34] Build Conflicts.js page showing all detected scheduling clashes | 2026-04-27T10:25:00+05:30
+[35] Add conflict resolution UI to reassign room or reschedule slot | 2026-04-27T16:10:00+05:30
+[36] Create Reports.js page with room utilization and faculty load | 2026-04-28T09:05:00+05:30
+[37] Implement CSV export for all report types in Reports page | 2026-04-28T13:30:00+05:30
+[38] Build Settings.js with change password and preferences form | 2026-04-28T17:50:00+05:30
+[39] Update App.css with global styles and Tailwind color variables | 2026-04-29T10:15:00+05:30
+[40] Polish sidebar hover effects and improve page responsiveness | 2026-04-29T16:40:00+05:30
+[41] Fix JWT token expiry not triggering logout correctly | 2026-04-30T09:30:00+05:30
+[42] Fix allocation form not clearing after successful submission | 2026-04-30T13:00:00+05:30
+[43] Fix timetable not rendering on first load due to async timing | 2026-04-30T17:20:00+05:30
+[44] Fix room filter not resetting on page navigation change | 2026-05-01T10:40:00+05:30
+[45] Fix users page crashing when role field is undefined | 2026-05-01T15:55:00+05:30
+[46] Add loading spinners and empty state messages across all pages | 2026-05-02T09:10:00+05:30
+[47] Improve backend error messages to return descriptive responses | 2026-05-02T13:25:00+05:30
+[48] Add confirmation modals before all delete and destructive actions | 2026-05-02T17:45:00+05:30
+[49] Add README with project overview, setup steps, and usage guide | 2026-05-03T10:50:00+05:30
+[50] Final code cleanup: remove console.logs and unused imports | 2026-05-03T16:30:00+05:30
+[51] Add .env.example for frontend and backend configuration | 2026-05-04T09:00:00+05:30
+[52] Configure CORS for production and update package.json scripts | 2026-05-04T13:15:00+05:30
+[53] Final commit: SMARTALLOC project complete and ready for submission | 2026-05-04T17:00:00+05:30
+[1/62] Initial commit: create SMARTALLOC project structure | 2026-04-14T09:10:00+05:30
