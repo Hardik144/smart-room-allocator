@@ -221,3 +221,4 @@ Final commit: project complete and ready for submission | 2026-05-04T17:00:00+05
 [2/62] Add package.json and install backend dependencies | 2026-04-14T11:30:00+05:30
 [3/62] Add React frontend scaffold with create-react-app | 2026-04-14T14:45:00+05:30
 [4/62] Configure Tailwind CSS and postcss in frontend | 2026-04-14T18:20:00+05:30
+[5/62] Add User model with name, email, password, and role | 2026-04-15T09:20:00+05:30
