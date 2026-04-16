@@ -225,3 +225,4 @@ Final commit: project complete and ready for submission | 2026-05-04T17:00:00+05
 [6/62] Implement JWT auth middleware in middleware/auth.js | 2026-04-15T13:10:00+05:30
 [7/62] Add register and login routes in routes/auth.js | 2026-04-15T17:40:00+05:30
 [8/62] Add Room model with capacity, type, and availability | 2026-04-16T09:00:00+05:30
+[9/62] Add Course model with code, name, credits, faculty ref | 2026-04-16T12:30:00+05:30
