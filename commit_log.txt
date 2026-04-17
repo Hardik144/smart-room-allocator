@@ -228,3 +228,4 @@ Final commit: project complete and ready for submission | 2026-05-04T17:00:00+05
 [9/62] Add Course model with code, name, credits, faculty ref | 2026-04-16T12:30:00+05:30
 [10/62] Add Allocation model linking course, room, and timeslot | 2026-04-16T17:00:00+05:30
 [11/62] Configure MongoDB connection in server.js with dotenv | 2026-04-17T10:15:00+05:30
+[12/62] Add seed.js to populate initial rooms and course data | 2026-04-17T16:00:00+05:30
