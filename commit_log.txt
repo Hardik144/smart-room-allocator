@@ -232,3 +232,4 @@ Final commit: project complete and ready for submission | 2026-05-04T17:00:00+05
 [13/62] Add rooms CRUD routes in backend/routes/rooms.js | 2026-04-18T09:05:00+05:30
 [14/62] Add courses CRUD routes in backend/routes/courses.js | 2026-04-18T11:50:00+05:30
 [15/62] Add users routes with admin role-based access control | 2026-04-18T14:30:00+05:30
+[16/62] Add allocations route with POST endpoint and validation | 2026-04-18T18:10:00+05:30
