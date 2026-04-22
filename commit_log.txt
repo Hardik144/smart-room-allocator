@@ -241,3 +241,4 @@ Final commit: project complete and ready for submission | 2026-05-04T17:00:00+05
 [22/62] Build Header.js with user display and logout button | 2026-04-21T09:15:00+05:30
 [23/62] Add ProtectedRoute.js to redirect unauthenticated users | 2026-04-21T12:50:00+05:30
 [24/62] Create AuthPage.js with login and signup form UI | 2026-04-21T17:20:00+05:30
+[25/62] Setup AuthContext with login, logout, and user state | 2026-04-22T10:30:00+05:30
