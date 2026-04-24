@@ -249,3 +249,4 @@ Final commit: project complete and ready for submission | 2026-05-04T17:00:00+05
 [30/62] Add room add/edit modal and delete with confirmation | 2026-04-23T18:00:00+05:30
 [31/62] Build Courses.js page with searchable course table | 2026-04-24T09:30:00+05:30
 [32/62] Add course create, edit modal, and delete functionality | 2026-04-24T13:40:00+05:30
+[33/62] Build Users.js page with role management and user search | 2026-04-24T17:50:00+05:30
