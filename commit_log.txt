@@ -251,3 +251,4 @@ Final commit: project complete and ready for submission | 2026-05-04T17:00:00+05
 [32/62] Add course create, edit modal, and delete functionality | 2026-04-24T13:40:00+05:30
 [33/62] Build Users.js page with role management and user search | 2026-04-24T17:50:00+05:30
 [34/62] Build Allocation.js page with timetable grid view | 2026-04-25T10:20:00+05:30
+[35/62] Add allocation form: select course, room, day, timeslot | 2026-04-25T15:55:00+05:30
