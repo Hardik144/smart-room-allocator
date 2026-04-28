@@ -259,3 +259,4 @@ Final commit: project complete and ready for submission | 2026-05-04T17:00:00+05
 [40/62] Fetch and render timetable data grouped by day and time | 2026-04-27T11:30:00+05:30
 [41/62] Add filter controls: by room, faculty, or course name | 2026-04-27T14:10:00+05:30
 [42/62] Make timetable grid responsive for smaller viewports | 2026-04-27T18:20:00+05:30
+[43/62] Build Conflicts.js showing all detected scheduling clashes | 2026-04-28T10:05:00+05:30
