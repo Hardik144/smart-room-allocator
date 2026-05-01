@@ -266,3 +266,4 @@ Final commit: project complete and ready for submission | 2026-05-04T17:00:00+05
 [47/62] Build Settings.js with password change and preferences | 2026-04-29T17:30:00+05:30
 [48/62] Update App.css with global styles and color variables | 2026-04-30T10:45:00+05:30
 [49/62] Polish Tailwind UI: hover states, transitions, spacing | 2026-04-30T16:20:00+05:30
+[50/62] Fix JWT token expiry not triggering logout on frontend | 2026-05-01T09:00:00+05:30
