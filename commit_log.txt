@@ -269,3 +269,4 @@ Final commit: project complete and ready for submission | 2026-05-04T17:00:00+05
 [50/62] Fix JWT token expiry not triggering logout on frontend | 2026-05-01T09:00:00+05:30
 [51/62] Fix allocation form not resetting after successful submit | 2026-05-01T11:30:00+05:30
 [52/62] Fix timetable blank on first load due to async race condition | 2026-05-01T14:50:00+05:30
+[53/62] Fix users page crash when role field is missing or undefined | 2026-05-01T18:15:00+05:30
