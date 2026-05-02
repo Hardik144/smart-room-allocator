@@ -272,3 +272,4 @@ Final commit: project complete and ready for submission | 2026-05-04T17:00:00+05
 [53/62] Fix users page crash when role field is missing or undefined | 2026-05-01T18:15:00+05:30
 [54/62] Fix room filter not clearing on page navigation | 2026-05-02T09:40:00+05:30
 [55/62] Fix course delete not updating table without page refresh | 2026-05-02T13:10:00+05:30
+[56/62] Fix sidebar active link not updating on browser back navigation | 2026-05-02T17:00:00+05:30
